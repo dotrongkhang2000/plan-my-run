@@ -6,10 +6,10 @@ import { useQuery } from "@tanstack/react-query";
 const ClientPage = () => {
   const trpc = useTRPC();
   const greeting = useQuery(
-    trpc.v1.example.hello.queryOptions({ text: "123" })
+    trpc.v1.example.hello.queryOptions({ text: "123" }),
   );
   if (!greeting.data) return <div>Loading...</div>;
-  return <div>{greeting.data.greeting}</div>;
+  return <div>{JSON.stringify(greeting.data)}</div>;
 };
 
 export default ClientPage;

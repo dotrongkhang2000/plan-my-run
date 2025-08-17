@@ -49,6 +49,7 @@ export const TRPCReactProvider = (
     createTRPCClient<AppRouter>({
       links: [
         httpBatchLink({
+          // support convert complex data types lie Date, Map... into that propre, not as string...
           transformer: superjson,
           url: getUrl(),
         }),
