@@ -1,0 +1,9 @@
+{
+  "name": "@trainly/tsconfig",
+  "version": "1.0.0",
+  "main": "base.json",
+  "private": true,
+  "devDependencies": {
+    "@trainly/prettier-config": "*"
+  }
+}

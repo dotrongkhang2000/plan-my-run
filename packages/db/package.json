@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@trainly/prettier-config": "*",
+    "@trainly/tsconfig": "*",
     "prisma": "^6.14.0"
   },
   "dependencies": {
