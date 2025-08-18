@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { publicProcedure, router } from "../../trpc";
-// import { prisma } from "@trainly/db";
-import { prisma } from "../../../db";
+import { prisma } from "@trainly/db";
 
 export const exampleRouter = router({
   hello: publicProcedure
