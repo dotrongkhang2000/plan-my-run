@@ -1,0 +1,5 @@
+{
+  "extends": "@trainly/tsconfig/base.json",
+  "include": ["eslint.config.mjs"],
+  "exclude": ["node_modules"]
+}
