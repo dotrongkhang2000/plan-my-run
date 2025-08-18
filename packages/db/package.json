@@ -1,11 +1,20 @@
 {
-  "name": "db",
+  "name": "@trainly/db",
   "version": "1.0.0",
   "description": "Prisma Client",
   "main": "index.ts",
+  "private": true,
+  "type": "module",
   "scripts": {
     "dev": "prisma studio",
     "migrate": "prisma migrate dev",
     "generate": "prisma generate"
+  },
+  "devDependencies": {
+    "@trainly/prettier-config": "*",
+    "prisma": "^6.14.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.14.0"
   }
 }

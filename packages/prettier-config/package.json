@@ -1,0 +1,13 @@
+{
+  "name": "@trainly/prettier-config",
+  "version": "1.0.0",
+  "main": "./.prettierrc.mjs",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "echo 0"
+  },
+  "devDependencies": {
+    "prettier-plugin-prisma": "^5.0.0"
+  }
+}
