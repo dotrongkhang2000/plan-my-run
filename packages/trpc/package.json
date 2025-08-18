@@ -8,5 +8,8 @@
     "@trainly/eslint-config": "*",
     "@trainly/prettier-config": "*",
     "@trainly/tsconfig": "*"
+  },
+  "dependencies": {
+    "@trainly/db": "*"
   }
 }

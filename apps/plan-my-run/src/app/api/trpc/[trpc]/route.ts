@@ -1,5 +1,5 @@
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
-import { appRouter } from "../../../../../packages/trpc/routers/root";
+import { appRouter } from "@trainly/trpc";
 
 const handler = (req: Request) =>
   fetchRequestHandler({

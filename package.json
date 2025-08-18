@@ -1,43 +1,11 @@
 {
   "name": "root",
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "scripts": {},
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
-  "dependencies": {
-    "@google/genai": "^1.12.0",
-    "@heroui/react": "^2.8.2",
-    "@prisma/adapter-better-sqlite3": "^6.14.0",
-    "@tanstack/react-query": "^5.85.0",
-    "@trpc/client": "^11.4.4",
-    "@trpc/next": "^11.0.0",
-    "@trpc/react-query": "^11.0.0",
-    "@trpc/server": "^11.4.4",
-    "@trpc/tanstack-react-query": "^11.4.4",
-    "client-only": "^0.0.1",
-    "framer-motion": "^12.23.12",
-    "next": "15.4.5",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "server-only": "^0.0.1",
-    "superjson": "^2.2.2",
-    "zod": "^4.0.17"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.4.5",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
