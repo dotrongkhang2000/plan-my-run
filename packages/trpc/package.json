@@ -1,0 +1,10 @@
+{
+  "name": "@trainly/trpc",
+  "version": "1.0.0",
+  "main": "./trpc.ts",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@trainly/prettier-config": "*"
+  }
+}
