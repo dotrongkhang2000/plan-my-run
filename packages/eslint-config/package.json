@@ -1,11 +1,9 @@
 {
-  "name": "@trainly/trpc",
+  "name": "@trainly/eslint-config",
   "version": "1.0.0",
-  "main": "./trpc.ts",
-  "type": "module",
+  "main": "index.js",
   "private": true,
   "devDependencies": {
-    "@trainly/eslint-config": "*",
     "@trainly/prettier-config": "*",
     "@trainly/tsconfig": "*"
   }
