@@ -1,12 +1,13 @@
 import { Button } from "@heroui/button";
-import ClientPage from "./client-page";
+import ClientPage from "@/app/client-page";
+import { TrainingPlanTable } from "@/components/traning-plan-table";
 
 export default async function Home() {
   return (
     <div>
-      <Button>Hello world</Button>
-
       <ClientPage />
+
+      <TrainingPlanTable />
     </div>
   );
 }
