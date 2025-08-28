@@ -4,8 +4,8 @@ import {
   createTRPCOptionsProxy,
 } from "@trpc/tanstack-react-query";
 import { cache } from "react";
-import { makeQueryClient } from "./query-client";
-import { appRouter } from "../../../packages/trpc/routers/root";
+import { makeQueryClient } from "@/vendors/trpc/query-client";
+import { appRouter } from "@trainly/trpc";
 
 // IMPORTANT: Create a stable getter for the query client that
 //            will return the same client during the same request.
