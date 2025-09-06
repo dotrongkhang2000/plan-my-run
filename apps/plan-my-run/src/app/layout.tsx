@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@/style/globals.css";
 import { Providers } from "@/app/providers";
 import { cn } from "@heroui/react";
+import { Layout } from "@/components/layout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Plan My Run",
-  description: "Plan your run",
+  title: {
+    template: "%s - Plan My Run",
+    default: "Plan My Run",
+  },
 };
 
 export default function RootLayout({
@@ -29,10 +32,12 @@ export default function RootLayout({
       <body
         className={cn(
           `${geistSans.variable} ${geistMono.variable} antialiased`,
-          "min-h-screen"
+          "flex min-h-screen flex-col"
         )}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <Layout>{children}</Layout>
+        </Providers>
       </body>
     </html>
   );
